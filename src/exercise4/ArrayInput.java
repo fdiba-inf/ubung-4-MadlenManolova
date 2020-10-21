@@ -8,11 +8,11 @@ public class ArrayInput {
   public static void main (String[] args) {
      Scanner input = new Scanner(System.in);
      
-     int = input.nextInt();
+     int a = input.nextInt();
      int[] numbers = new int [a];
 
      System.out.println ("Enter numbers: ");
-     for (int index = 0; index < numbers.lenght; index++) {
+     for (int index = 0; index < numbers.length; index++) {
        numbers [index] = input.nextInt();
      }
 
