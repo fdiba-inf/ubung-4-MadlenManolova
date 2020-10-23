@@ -13,16 +13,16 @@ public class MinIndex {
         System.out.println("Enter numbers: ");
         int min= 0; 
         for  ( int index = 0; index < numbers.length; index++) {
-        numbers[index] = input.nextDouble();
-        }
+         numbers[index] = input.nextDouble();
+         }
         double minnumber = numbers[0];
         for (int index=0; index < numbers.length; index++)
-        {
-        if (minnumber>numbers[index]){
-          min = index;
-          minnumber = numbers[index];
-        }
-        }
+         {
+          if (minnumber>numbers[index]){
+            min = index;
+            minnumber = numbers[index];
+           }
+         }
         
 
           System.out.println("Min index: " + min);
