@@ -4,24 +4,25 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayReversal {
-  public static void main (String[] args){
-    Scanner input = new Scanner (System.in);
 
-    int Groesse = input.nextInt ();
-    char[] numbers = new char[Groesse];
-        
-    System.out.println("Enter numbers: ");
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int groesse  = input.nextInt();
+        char[] numbers = new char[groesse];
 
-    for (int index = 0; index < numbers.length; index++) {
+        System.out.println("Enter letter: ");
+        for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.next().charAt(0);
         }
-        char[] numbers+ = new char[Groesse];
-        for (int i=0; i < numbers+.length;i++){
-          numbers+[i]= numbers[numbers.length];
+        char[] num= new char[groesse];
+        for (int i=0; i < num.length;i++){
+          num[i]= numbers[numbers.length -1 - i];
         }
-
+        String numAsString = Arrays.toString(num);
+        System.out.println("Reversed symbols: " + numAsString);
+        
     
-        System.out.println("Reversed symbols: " + Arrays.toString(numbers));
-  }
+
+    }
 
 }
